@@ -1,0 +1,22 @@
+tasks:
+- init: ./mvnw -B dependency:go-offline package -DskipTests
+  command: java -jar target/*.jar
+  name: Run PetClinic app
+
+# exposed ports
+ports:
+- port: 8080
+  onOpen: open-preview
+
+vscode:
+  extensions:
+    - pivotal.vscode-spring-boot
+    - vscjava.vscode-java-pack
+
+jetbrains:
+  intellij:  
+    vmoptions: '-Dfoo=bar'
+    plugins:
+      - com.haulmont.jpab
+    prebuilds:
+      version: both
