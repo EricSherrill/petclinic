@@ -1,0 +1,27 @@
+image: gitpod/workspace-full
+
+tasks:
+  - init: ./mvnw clean install -U -DskipTests
+    command: ./mvnw spring-boot:run
+    name: Run PetClinic app
+  - name: Task 2
+    command: echo hello
+
+ports:
+  - port: 8080
+    onOpen: open-preview
+  # make UI Tests port public
+  - port: 28082
+    visibility: public
+
+vscode:
+  extensions:
+    - pivotal.vscode-spring-boot
+    - vscjava.vscode-java-pack
+
+jetbrains:
+  intellij:
+    plugins:
+      - com.haulmont.jpab
+    prebuilds:
+      version: both
