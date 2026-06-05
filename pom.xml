@@ -23,8 +23,10 @@
 
     <!-- Web dependencies -->
     <webjars-bootstrap.version>5.3.3</webjars-bootstrap.version>
-    <webjars-jquery-ui.version>1.14.0</webjars-jquery-ui.version>
+
+    <webjars-jquery-ui.version>1.14.2</webjars-jquery-ui.version>
     <webjars-jquery.version>4.0.0</webjars-jquery.version>
+
     <wro4j.version>2.1.1</wro4j.version>
 
     <jacoco.version>0.8.12</jacoco.version>
