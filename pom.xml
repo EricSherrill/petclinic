@@ -22,8 +22,8 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- Web dependencies -->
-    <webjars-bootstrap.version>5.3.3</webjars-bootstrap.version>
 
+    <webjars-bootstrap.version>5.3.8</webjars-bootstrap.version>
     <webjars-jquery-ui.version>1.14.2</webjars-jquery-ui.version>
     <webjars-jquery.version>4.0.0</webjars-jquery.version>
 
